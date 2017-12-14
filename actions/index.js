@@ -2,7 +2,7 @@
 只有三个行为
 *输入 addTodo
 * 代办完成的切换 toggleTodo
-* 状态的检查 filter
+* 状态的检查 filter set visibility
 * */
 let nextTodoId=0;
 export const addTodo=(text)=>{

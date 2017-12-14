@@ -51,7 +51,7 @@ const todos = (state, action) => {
             return [...state,
                 todo(undefined, action)];
         case 'TOGGLE_TODO':
-            /* 将每一个待办项 都交给todo 处理  用map  实现 遍历*/
+            /* 将每一个待办项 都交给todo 处理  用map  实现 遍历 return state finally but the value inside already processed */
             return state.map(t=>todo(t,action));
         default:
             return state;
